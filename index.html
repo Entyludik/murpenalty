@@ -104,7 +104,7 @@
         .kick-button {
             font-family: 'Intro', sans-serif;
             margin-top: 20px;
-            padding: 10px 20px;
+            padding: 20px 30px;
             font-size: 16px;
             background-color: #ff0000;
             color: white;
@@ -128,8 +128,6 @@
             align-items: center;
             z-index: 2;
         }
-
-
 
 
         .counter {
@@ -184,61 +182,6 @@
         .dot.active {
             background-color: white;
         }
-.tab {
-    position: fixed;
-    bottom: 0;
-    z-index: 10;
-    width: 100=%;
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 10px 0;
-    height: 70px;
-}
-
-.kick-button {
-    position: absolute;
-    bottom: 100px; /* Расположение кнопки над кнопкой "Back" */
-    background-color: #ff0000; /* Красный фон */
-    color: #fff; /* Белый текст */
-    border: none;
-    padding: 20px 30px;
-    font-size: 16px;
-    border-radius: 1px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 11; /* Поверх кнопки Back */
-}
-
-.kick-button:hover {
-    background-color: #cc0000; /* Темнее при наведении */
-}
-
-.kick-button:active {
-    background-color: #a30000; /* Темнее при нажатии */
-}
-
-.kick-button:focus {
-    outline: none; /* Убрать контур при фокусировке */
-}
-
-.tablinks {
-    background-color: inherit;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 22px 20px;
-    color: #fff;
-    border-radius: 50px;
-    font-size: 16px;
-}
-
-.tablinks img {
-    max-width: 38px;
-    height: 38px;
-}
-
-
 
        .labels {
             display: flex;
@@ -321,7 +264,7 @@
         }
 
         .tab button:hover {
-            background-color: #ff0000;
+            background-color: #555;
             transform: translateY(-2px);
         }
 
@@ -432,20 +375,16 @@
         <div class="circle"></div><div class="circle"></div><div class="circle"></div>
     </div>
 
-
+    <button class="kick-button">KICK</button>
 
     <!-- Анимация движущихся мячей -->
     <div class="moving-ball"></div>
     <div class="moving-ball" style="animation-delay: 3s;"></div>
     <div class="moving-ball" style="animation-delay: 6s;"></div>
-<div class="tab">
-    <button class="kick-button">KICK</button>
-    <button class="tablinks games-icon" data-tab="Games" onclick="window.location.href='https://entyludik.github.io/murmain/';">
-        <img src="back.png" alt="Игры">
-    </button>
-</div>
-
-
+     <div class="tab">
+        <button class="tablinks games-icon" data-tab="Games" onclick="window.location.href=&#39;https://entyludik.github.io/murmain/&#39;;">
+            <img src="back.png" alt="Игры">
+        </button>
     </div>
     <script src="telegram-web-app.js"></script>
     <script>
